@@ -9,11 +9,13 @@
     <!-- tailwinds daysiui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/a2dccd6894.js" crossorigin="anonymous"></script>
     <!-- tailwind custom color -->
     <script>
         tailwind.config = {
@@ -21,6 +23,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'heading-color': '#1C1C1C',
+                        'pragraph-color': '#777',
                     }
                 }
             }
@@ -36,9 +40,89 @@
 </head>
 
 <body class="font-family">
-    <header>
+    <header class="container mx-auto">
+        <!-- banner -->
+        <div class="hero min-h-screen  ">
+            <div class="hero-content flex flex-col lg:flex-row">
+                <div>
+                    <h1 class="text-5xl font-extrabold font-heading-color">
+                        It's good <br>
+                        tea time at The <br>
+                        Tea House</h1>
+                    <p class="py-6 tex-paragraph-color">Tea and Botanical Solutions Supplier Give Optimum Satisfaction
+                        To Your Taste Buds.</p>
 
+                    <button class="btn btn-primary">Explore More
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                </div>
+
+                <div>
+                    <img class="-z-0" src="./images/banner.png" />
+
+                    <div class="flex items-center gap-3 p-4 w-60 bg-white drop-shadow-lg rounded-xl -mt-28 ml-24">
+                        <i class="fa-solid fa-star text-3xl text-amber-500"></i>
+                        <div class="">
+                            <h3 class="font-extrabold text-header-color">5.00</h3>
+                            <p class="font-semibold text-4">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
+    <main class="container mx-auto">
+        <!-- Our Featured Products -->
+        <section class="mt-20">
+            <div class="text-center">
+                <h1 class="font-extrabold text-4xl">Our Featured Products</h1>
+                <p class="text-pragraph-color max-w-4xl mx-auto pt-5">There are many variations of passages of Lorem
+                    Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
+                    randomised words which don't look even slightly believable. </p>
+            </div>
+            <!-- Featured card -->
+            <div class="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- first card -->
+
+                <div class="card bg-gradient-to-b from-gray-200 to-gray-100 shadow-xl p-10">
+                    <figure><img src="./images/tea-1.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center p-0 mt-8">
+                        <h2 class="text-heading-color font-extrabold">Milk Tea</h2>
+                        <p class="text-pragraph-color text-4">Creamer could be replaced by fresh milk</p>
+
+                    </div>
+                </div>
+                <!-- second card -->
+                <div class="card bg-gradient-to-b from-gray-200 to-gray-100 shadow-xl p-10">
+                    <figure><img src="./images/tea-2.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center  p-0 mt-8">
+                        <h2 class="text-heading-color font-extrabold">Black Tea</h2>
+                        <p class="text-pragraph-color text-4">Creamer could be replaced by fresh milk</p>
+
+                    </div>
+                </div>
+                <!-- third card -->
+                <div class="card bg-gradient-to-b from-gray-200 to-gray-100 shadow-xl p-10">
+                    <figure><img src="./images/tea-3.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center p-0 mt-8">
+                        <h2 class="text-heading-color font-extrabold">Lemon Tea</h2>
+                        <p class="text-pragraph-color text-4">Creamer could be replaced by fresh milk</p>
+
+                    </div>
+                </div>
+                <!-- fourth card -->
+                <div class="card  bg-gradient-to-b from-gray-200 to-gray-100 shadow-xl p-10">
+                    <figure><img src="./images/tea-4.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center p-0 mt-8">
+                        <h2 class="text-6 text-heading-color font-extrabold">Green Tea</h2>
+                        <p class="text-pragraph-color ">Creamer could be replaced by fresh milk</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
 </body>
 
 </html>
